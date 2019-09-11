@@ -1,0 +1,67 @@
+<!-- <form [formGroup]="form" (ngSubmit)="submit(f)">
+    <div class="form-group">
+        <label for="firstName">First Name:</label>
+        <input formControlName="firstName" type="text" class="form-control">
+    </div>
+    <div class=" alert alert-danger" *ngIf="firstName.touched && !firstName.valid">
+        <div *ngIf="firstName.errors.required">First Name is required</div>
+        <div *ngIf="firstName.errors.minlength">First Name should be of minimum length
+            {{firstName.errors.minlength.requiredLength}} characters
+        </div>
+
+    </div>
+    <div class="form-group">
+        <label for="pwd">Password:</label>
+        <input type="password" class="form-control" id="pwd">
+    </div>
+    <div class="checkbox">
+        <label><input type="checkbox"> Remember me</label>
+    </div>
+    
+    <button type="submit" [disabled]="!form.valid" class="btn btn-primary">Submit</button>
+</form> -->
+<!-- <h1>Reactive form</h1>
+
+<form [formGroup]="form" (ngSubmit)="login()">
+<div *ngIf="form.errors" class="alert alert-danger">
+Username or password is invalid
+</div>
+<div class="form-group">
+<label for="username">Username</label>
+<input
+id="username"
+type="text"
+class="form-control"
+formControlName="username"
+/> -->
+<!-- <div
+*ngIf="username.touched && form.get('username').invalid"
+class="alert alert-danger"
+>
+username is required
+</div> -->
+
+<!-- <div
+*ngIf="form.get('username').touched && form.get('username').invalid"
+class="alert alert-danger"
+>
+<div *ngIf="form.get('username').username.errors.required">Username is required</div>
+<div *ngIf="form.get('username').username.errors.minlength">
+Username should be of minimum 3 cha
+</div>
+<div *ngIf="form.get('username').username.errors.cannotContainSpace">
+Username can't contain space
+</div>
+</div>
+</div>
+<div class="form-group">
+<label for="password">Password</label>
+<input
+id="password"
+type="text"
+class="form-control"
+formControlName="password"
+/>
+</div>
+<button class="btn btn-primary" type="submit">Sign Up</button>
+</form> -->
